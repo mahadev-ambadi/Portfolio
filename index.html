@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Mahadev Ambadi SS - AI Enthusiast, Software Engineer, and Full Stack Developer. Discover my profile, projects, and work experience.">
+  <title>Mahadev Ambadi SS | Profile</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- Favicon placeholder (can be customized) -->
+  <link rel="icon" type="image/png" href="assets/images/avatar.png">
+</head>
+<body>
+  <!-- Dynamic Backgrounds -->
+  <canvas id="bg-canvas"></canvas>
+  <div class="aurora-bg">
+    <div class="aurora-blob aurora-blob-1"></div>
+    <div class="aurora-blob aurora-blob-2"></div>
+  </div>
+
+  <!-- Header / Navigation -->
+  <header class="header-nav">
+    <div class="nav-container">
+      <a href="index.html" class="logo">Mahadev <span>Ambadi SS</span></a>
+      <button class="nav-toggle" aria-label="Toggle Navigation">
+        <i class="bi bi-list"></i>
+      </button>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="experience.html" class="nav-link">Experience</a></li>
+          <li><a href="projects.html" class="nav-link">Projects</a></li>
+          <li><a href="education.html" class="nav-link">Education</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Profile Page -->
+  <main class="page-fade-in">
+    <section class="hero-wrapper">
+      <div class="hero-content">
+        <span class="hero-tag">Portfolio</span>
+        <h1 class="hero-title">Hi, I'm <br><span class="gradient-text">Mahadev Ambadi</span></h1>
+        <div class="hero-typed">
+          I'm&nbsp;<span id="typed-prefix">a</span>&nbsp;<span id="typed-text" data-words='["Software Engineer", "AI / ML Enthusiast", "Full Stack Developer", "GenAI Developer"]'></span><span class="typed-cursor">|</span>
+        </div>
+        <p class="hero-desc">
+          AI and Software Development enthusiast with hands-on experience in full-stack web development, cloud deployment, debugging, testing, and software maintenance. Skilled in building scalable applications, integrating intelligent AI APIs, and following robust SDLC workflows.
+        </p>
+        <div class="hero-buttons">
+          <a href="projects.html" class="btn btn-primary">View Projects <i class="bi bi-arrow-right"></i></a>
+          <a href="contact.html" class="btn btn-secondary">Get In Touch</a>
+        </div>
+      </div>
+      <div class="hero-img-container">
+        <div class="hero-img-glow"></div>
+        <img src="assets/images/avatar.png" alt="Mahadev Ambadi SS Avatar" class="hero-img" id="profile-avatar">
+      </div>
+    </section>
+
+    <!-- Quick Skills Matrix Section (Areas of Expertise) -->
+    <section class="skills-brief-section">
+      <h2 class="section-title">Areas of <span class="gradient-text">Expertise</span></h2>
+      <p class="section-subtitle">A detailed breakdown of my core competencies, methods, and the technical tooling I employ.</p>
+      
+      <div class="skills-grid">
+        <!-- Software Engineering -->
+        <div class="glass-card skill-category-card">
+          <h3><i class="bi bi-code-slash"></i> Software Engineering</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Full Stack Development</span>
+            <span class="skill-tag">Next.js / React</span>
+            <span class="skill-tag">Angular / TypeScript</span>
+            <span class="skill-tag">Node.js / Django</span>
+            <span class="skill-tag">APIs & Integration</span>
+            <span class="skill-tag">Databases & Supabase</span>
+            <span class="skill-tag">SDLC & Scalable Systems</span>
+          </div>
+        </div>
+
+        <!-- Artificial Intelligence -->
+        <div class="glass-card skill-category-card">
+          <h3><i class="bi bi-cpu"></i> Artificial Intelligence</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Generative AI & LLMs</span>
+            <span class="skill-tag">Conversational AI</span>
+            <span class="skill-tag">NLP & Text Pipelines</span>
+            <span class="skill-tag">Resume Analysis Systems</span>
+            <span class="skill-tag">AI Feedback Systems</span>
+            <span class="skill-tag">Machine & Deep Learning</span>
+            <span class="skill-tag">Computer Vision</span>
+          </div>
+        </div>
+
+        <!-- Cybersecurity -->
+        <div class="glass-card skill-category-card">
+          <h3><i class="bi bi-shield-lock-fill"></i> Cybersecurity</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Threat Detection</span>
+            <span class="skill-tag">Anomaly Detection</span>
+            <span class="skill-tag">Security Monitoring</span>
+            <span class="skill-tag">Risk Analysis</span>
+            <span class="skill-tag">RBAC & JWT Security</span>
+          </div>
+        </div>
+
+        <!-- Data Analytics -->
+        <div class="glass-card skill-category-card">
+          <h3><i class="bi bi-bar-chart-line-fill"></i> Data Analytics</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Excel Dashboarding</span>
+            <span class="skill-tag">Reporting & Insights</span>
+            <span class="skill-tag">Pivot Tables</span>
+            <span class="skill-tag">VLOOKUP / XLOOKUP</span>
+            <span class="skill-tag">Google Sheets</span>
+            <span class="skill-tag">Data Visualization</span>
+            <span class="skill-tag">Business Intelligence</span>
+          </div>
+        </div>
+
+        <!-- Operations & ERP -->
+        <div class="glass-card skill-category-card">
+          <h3><i class="bi bi-gear-fill"></i> Operations & ERP</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Procurement Management</span>
+            <span class="skill-tag">Inventory Management</span>
+            <span class="skill-tag">Vendor Management</span>
+            <span class="skill-tag">Workflow Automation</span>
+            <span class="skill-tag">Process Optimization</span>
+            <span class="skill-tag">Stakeholder Coordination</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-logo">Mahadev Ambadi SS</div>
+      <p class="footer-copyright">&copy; 2026 Mahadev Ambadi SS. All rights reserved.</p>
+      <div class="footer-socials">
+        <a href="https://github.com" target="_blank" class="footer-social" aria-label="GitHub"><i class="bi bi-github"></i></a>
+        <a href="https://linkedin.com" target="_blank" class="footer-social" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+        <a href="mailto:ssmahadevambadi@gmail.com" class="footer-social" aria-label="Email"><i class="bi bi-envelope-fill"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

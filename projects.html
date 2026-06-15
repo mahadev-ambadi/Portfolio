@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Technical projects and academic achievements of Mahadev Ambadi SS, including GenAI, NLP, Cybersecurity, and Web Development.">
+  <title>Mahadev Ambadi SS | Technical Projects</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" type="image/png" href="assets/images/avatar.png">
+</head>
+<body>
+  <!-- Dynamic Backgrounds -->
+  <canvas id="bg-canvas"></canvas>
+  <div class="aurora-bg">
+    <div class="aurora-blob aurora-blob-1"></div>
+    <div class="aurora-blob aurora-blob-2"></div>
+  </div>
+
+  <!-- Header / Navigation -->
+  <header class="header-nav">
+    <div class="nav-container">
+      <a href="index.html" class="logo">Mahadev <span>Ambadi SS</span></a>
+      <button class="nav-toggle" aria-label="Toggle Navigation">
+        <i class="bi bi-list"></i>
+      </button>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="experience.html" class="nav-link">Experience</a></li>
+          <li><a href="projects.html" class="nav-link active">Projects</a></li>
+          <li><a href="education.html" class="nav-link">Education</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="page-fade-in">
+    <!-- Projects Section -->
+    <section>
+      <h2 class="section-title">Technical <span class="gradient-text">Projects</span></h2>
+      <p class="section-subtitle">A curated gallery of projects I have built, ranging from GenAI and NLP pipelines to robust full-stack web applications.</p>
+      
+      <!-- Portfolio Filters -->
+      <div class="portfolio-filters">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="ai-ml">AI & Machine Learning</button>
+        <button class="filter-btn" data-filter="web-dev">Full Stack Web</button>
+        <button class="filter-btn" data-filter="data-analytics">Data Analytics</button>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1: HackerCompliment -->
+        <div class="project-card-container" data-category="web-dev">
+          <div class="glass-card project-card">
+            <span class="project-status">Featured</span>
+            <h3 class="project-title">HackerCompliment – AI Interview Prep</h3>
+            <p class="project-desc">
+              An AI-powered career preparation platform that helps students practice mock interviews, solve coding challenges, analyze resumes, and receive personalized feedback using Generative AI.
+            </p>
+            <div class="project-tech-list">
+              <span class="project-tech">Next.js</span>
+              <span class="project-tech">TypeScript</span>
+              <span class="project-tech">Supabase</span>
+              <span class="project-tech">Generative AI</span>
+              <span class="project-tech">Payments</span>
+              <span class="project-tech">Analytics</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/mahadev-ambadi/HackerCompliment" target="_blank" class="project-link"><i class="bi bi-github"></i> Repository</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: University Chatbot -->
+        <div class="project-card-container" data-category="ai-ml">
+          <div class="glass-card project-card">
+            <span class="project-status">Ongoing</span>
+            <h3 class="project-title">University Chatbot System</h3>
+            <p class="project-desc">
+              Developing an NLP-based chatbot using LLMs for intelligent multi-turn conversations, applying innovative GenAI techniques to solve real university knowledge-access challenges. Integrated LLM APIs for dynamic knowledge retrieval and automation workflows.
+            </p>
+            <div class="project-tech-list">
+              <span class="project-tech">GenAI</span>
+              <span class="project-tech">LLM APIs</span>
+              <span class="project-tech">NLP</span>
+              <span class="project-tech">Python</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com" target="_blank" class="project-link"><i class="bi bi-github"></i> Repository</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: Cybersecurity Threat Detection -->
+        <div class="project-card-container" data-category="ai-ml">
+          <div class="glass-card project-card">
+            <span class="project-status">Completed</span>
+            <h3 class="project-title">Cybersecurity Threat Detection</h3>
+            <p class="project-desc">
+              Built an AI-powered anomaly detection system using Isolation Forest, achieving 93% recall. Designed automated processing pipelines and a real-time web monitoring dashboard for active threat visualization.
+            </p>
+            <div class="project-tech-list">
+              <span class="project-tech">Isolation Forest</span>
+              <span class="project-tech">Scikit-learn</span>
+              <span class="project-tech">Python</span>
+              <span class="project-tech">Streamlit</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/mahadev-ambadi/cyber-threat-detection-system" target="_blank" class="project-link"><i class="bi bi-github"></i> Repository</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4: Sentiment Analysis -->
+        <div class="project-card-container" data-category="ai-ml">
+          <div class="glass-card project-card">
+            <span class="project-status">Completed</span>
+            <h3 class="project-title">Sentiment Analysis Pipeline</h3>
+            <p class="project-desc">
+              Built an NLP pipeline using Scikit-learn, achieving 88% model accuracy. Implemented automated text cleaning and feature extraction with TF-IDF, deploying an interactive Streamlit UI for user testing and predictions.
+            </p>
+            <div class="project-tech-list">
+              <span class="project-tech">NLP</span>
+              <span class="project-tech">TF-IDF</span>
+              <span class="project-tech">Scikit-learn</span>
+              <span class="project-tech">Streamlit</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/mahadev-ambadi/sentiment-analysis" target="_blank" class="project-link"><i class="bi bi-github"></i> Repository</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5: Deep Learning Image Classification -->
+        <div class="project-card-container" data-category="ai-ml">
+          <div class="glass-card project-card">
+            <span class="project-status">Completed</span>
+            <h3 class="project-title">CNN Image Classification</h3>
+            <p class="project-desc">
+              Built a CNN classifier achieving 91% validation accuracy on images. Applied transfer learning and optimized model performance through systematic experimentation, hyperparameter tuning, and debugging.
+            </p>
+            <div class="project-tech-list">
+              <span class="project-tech">CNN</span>
+              <span class="project-tech">Deep Learning</span>
+              <span class="project-tech">TensorFlow</span>
+              <span class="project-tech">Python</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com" target="_blank" class="project-link"><i class="bi bi-github"></i> Repository</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 6: Airport Parking Dashboard -->
+        <div class="project-card-container" data-category="data-analytics">
+          <div class="glass-card project-card">
+            <span class="project-status">Completed</span>
+            <h3 class="project-title">Airport Parking Operations Dashboard</h3>
+            <p class="project-desc">
+              Executive-level operations analytics dashboard built for airport parking management and operational reporting. Designed to simulate real-world operations and support decisions through business intelligence.
+            </p>
+            <div class="project-tech-list">
+              <span class="project-tech">Excel</span>
+              <span class="project-tech">Python</span>
+              <span class="project-tech">Streamlit</span>
+              <span class="project-tech">Pivot Tables</span>
+              <span class="project-tech">XLOOKUP</span>
+              <span class="project-tech">BI Reporting</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/mahadev-ambadi/airport-parking-operations-dashboard" target="_blank" class="project-link"><i class="bi bi-github"></i> Repository</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 7: MST Builder Game -->
+        <div class="project-card-container" data-category="web-dev">
+          <div class="glass-card project-card">
+            <span class="project-status">Completed</span>
+            <h3 class="project-title">MST Builder Game – Visualizer</h3>
+            <p class="project-desc">
+              Interactive graph theory learning platform that teaches Minimum Spanning Tree algorithms (Prim's & Kruskal's) through gamified learning and dynamic HTML5 canvas renderings.
+            </p>
+            <div class="project-tech-list">
+              <span class="project-tech">JavaScript</span>
+              <span class="project-tech">HTML5 Canvas</span>
+              <span class="project-tech">CSS3</span>
+              <span class="project-tech">Algorithms</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/mahadev-ambadi/prims1" target="_blank" class="project-link"><i class="bi bi-github"></i> Repository</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 8: ERP System -->
+        <div class="project-card-container" data-category="web-dev">
+          <div class="glass-card project-card">
+            <span class="project-status">Completed</span>
+            <h3 class="project-title">Enterprise ERP Platform</h3>
+            <p class="project-desc">
+              Co-developed a robust full-stack ERP platform. Implemented procurement and inventory modules (PR, PO, GRN), secure Role-Based Access Control, JWT authentication, and live notification microservices.
+            </p>
+            <div class="project-tech-list">
+              <span class="project-tech">Angular</span>
+              <span class="project-tech">Node.js</span>
+              <span class="project-tech">Express.js</span>
+              <span class="project-tech">Sequelize</span>
+              <span class="project-tech">SQLite</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/mahadev-ambadi/GenRobotics-ERP" target="_blank" class="project-link"><i class="bi bi-github"></i> Repository</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 9: Django E-Commerce (Soften) -->
+        <div class="project-card-container" data-category="web-dev">
+          <div class="glass-card project-card">
+            <span class="project-status">Completed</span>
+            <h3 class="project-title">Django E-Commerce Application</h3>
+            <p class="project-desc">
+              Developed a full-stack e-commerce system featuring responsive client views and product catalogs, secure session management, automated cart checkout processes, and structured MySQL relational schemas.
+            </p>
+            <div class="project-tech-list">
+              <span class="project-tech">Django</span>
+              <span class="project-tech">Python</span>
+              <span class="project-tech">MySQL</span>
+              <span class="project-tech">REST APIs</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/mahadev-ambadi/fish-shop-django" target="_blank" class="project-link"><i class="bi bi-github"></i> Repository</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 11: Step Tracker & Activity Analytics -->
+        <div class="project-card-container" data-category="data-analytics">
+          <div class="glass-card project-card">
+            <span class="project-status">Completed</span>
+            <h3 class="project-title">Step Tracker & Activity Analytics</h3>
+            <p class="project-desc">
+              Data analytics platform for monitoring activity trends and generating health insights, built with high-performance pandas data pipelines and responsive interactive Streamlit dashboards.
+            </p>
+            <div class="project-tech-list">
+              <span class="project-tech">Python</span>
+              <span class="project-tech">Pandas</span>
+              <span class="project-tech">NumPy</span>
+              <span class="project-tech">Streamlit</span>
+              <span class="project-tech">Data Viz</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/mahadev-ambadi/Step-Tracker" target="_blank" class="project-link"><i class="bi bi-github"></i> Repository</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section>
+      <h2 class="section-title">Key <span class="gradient-text">Achievements</span></h2>
+      <p class="section-subtitle">Milestones and performance indicators reflecting my commitment to excellence in academics and software engineering.</p>
+      
+      <div class="achievements-grid" style="margin-bottom: 4rem;">
+        <!-- GPA -->
+        <div class="glass-card achievement-card">
+          <div class="achievement-icon">
+            <i class="bi bi-journal-check"></i>
+          </div>
+          <div class="achievement-value">3.93 / 4.0</div>
+          <div class="achievement-label">Academic GPA</div>
+          <p class="achievement-detail">B.Tech CSE at Christ University</p>
+        </div>
+
+        <!-- Class XII -->
+        <div class="glass-card achievement-card">
+          <div class="achievement-icon">
+            <i class="bi bi-award"></i>
+          </div>
+          <div class="achievement-value">93 %</div>
+          <div class="achievement-label">Higher Secondary score</div>
+          <p class="achievement-detail">Class XII school board exams</p>
+        </div>
+
+        <!-- Performance ML -->
+        <div class="glass-card achievement-card">
+          <div class="achievement-icon">
+            <i class="bi bi-lightning-charge"></i>
+          </div>
+          <div class="achievement-value">93 %</div>
+          <div class="achievement-label">Threat Detection Recall</div>
+          <p class="achievement-detail">AI-powered cybersecurity model</p>
+        </div>
+
+        <!-- Preprocessing Optimization -->
+        <div class="glass-card achievement-card">
+          <div class="achievement-icon">
+            <i class="bi bi-stopwatch"></i>
+          </div>
+          <div class="achievement-value">~ 30 %</div>
+          <div class="achievement-label">Pipeline Speedup</div>
+          <p class="achievement-detail">Data preprocessing time reduction</p>
+        </div>
+      </div>
+
+      <!-- Honours & Activities Sub-section -->
+      <h3 style="font-family: var(--font-title); font-size: 1.75rem; font-weight: 700; margin-bottom: 1.5rem; text-align: center;">Honours & <span class="gradient-text">Activities</span></h3>
+      <div class="skills-grid">
+        <div class="glass-card" style="padding: 2.5rem;">
+          <h4 style="font-family: var(--font-title); font-size: 1.25rem; font-weight: 600; margin-bottom: 1.25rem; color: var(--accent-cyan); display: flex; align-items: center; gap: 0.75rem;"><i class="bi bi-award-fill"></i> Awards & Recognition</h4>
+          <ul class="timeline-bullets">
+            <li>**Recipient of Proficiency Award (2022–23)** for outstanding academic accomplishments.</li>
+            <li>**Honoured by Dr. Shashi Tharoor MP** for exceptional performance and distinction.</li>
+          </ul>
+        </div>
+        
+        <div class="glass-card" style="padding: 2.5rem;">
+          <h4 style="font-family: var(--font-title); font-size: 1.25rem; font-weight: 600; margin-bottom: 1.25rem; color: var(--accent-purple); display: flex; align-items: center; gap: 0.75rem;"><i class="bi bi-people-fill"></i> Community & Leadership</h4>
+          <ul class="timeline-bullets">
+            <li>**Volunteer at Cloud Security Summit**, Bangalore, supporting summit logistics and security discussions.</li>
+            <li>Active **Member of University Dance Team**, representing Christ University in dance and arts.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-logo">Mahadev Ambadi SS</div>
+      <p class="footer-copyright">&copy; 2026 Mahadev Ambadi SS. All rights reserved.</p>
+      <div class="footer-socials">
+        <a href="https://github.com" target="_blank" class="footer-social" aria-label="GitHub"><i class="bi bi-github"></i></a>
+        <a href="https://linkedin.com" target="_blank" class="footer-social" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+        <a href="mailto:ssmahadevambadi@gmail.com" class="footer-social" aria-label="Email"><i class="bi bi-envelope-fill"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
