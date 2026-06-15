@@ -387,9 +387,42 @@ function initContactForm() {
       return;
     }
 
-    // Design a premium looking temporary dynamic glass toast notification
-    showToastNotification(`Thanks, ${name}! Your message has been sent successfully.`);
-    form.reset();
+    // Get button and update text to show loading state
+    const submitBtn = form.querySelector('button[type="submit"]');
+    const origBtnText = submitBtn.innerHTML;
+    submitBtn.disabled = true;
+    submitBtn.innerHTML = 'Sending... <i class="bi bi-hourglass-split"></i>';
+
+    // Submit form using fetch API to FormSubmit
+    fetch('https://formsubmit.co/ajax/ssmahadevambadi@gmail.com', {
+      method: 'POST',
+      headers: { 
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+      },
+      body: JSON.stringify({
+        name: name,
+        email: email,
+        subject: subject,
+        message: message
+      })
+    })
+    .then(response => {
+      if (response.ok) {
+        showToastNotification(`Thanks, ${name}! Your message has been sent successfully.`);
+        form.reset();
+      } else {
+        throw new Error('Form submission failed.');
+      }
+    })
+    .catch(error => {
+      showToastNotification("Oops! There was a problem sending your message.");
+      console.error(error);
+    })
+    .finally(() => {
+      submitBtn.disabled = false;
+      submitBtn.innerHTML = origBtnText;
+    });
   });
 }
 
