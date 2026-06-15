@@ -34,6 +34,6 @@ Personal portfolio website showcasing my experience, projects, internships, skil
 
 ## Contact
 
-LinkedIn: [Your LinkedIn] https://www.linkedin.com/in/mahadev-ambadi-a437b7306/
+LinkedIn: [https://www.linkedin.com/in/mahadev-ambadi-a437b7306/] 
 
 Email: ssmahadevambadi@gmail.com
